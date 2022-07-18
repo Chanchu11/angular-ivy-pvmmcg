@@ -1,0 +1,23 @@
+p {
+  font-family: Lato;
+}
+
+.board {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.player {
+  text-align: center;
+  display: inline-block;
+}
+h1 {
+  margin: 30px;
+  font-size: 3rem;
+  color: blueviolet;
+}
+
+img {
+  width: 70%;
+}
