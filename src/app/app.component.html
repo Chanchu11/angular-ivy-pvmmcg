@@ -1,12 +1,35 @@
 <hello name="{{ name }}"></hello>
 <h1>Lets Play two-player dice game</h1>
+<span *ngIf="stopGame">
+  <p> Winner is: {{ Winner}}<p>
+</span>
 <div class="board">
   <div class="player">
-    <h3>{{ player1Name }}</h3>
-    <img src="images/dice1.jpg" />
+    <h2>{{ player1Name }}</h2>
+    <img src="dice1.jpg" />
+    <h3> Points : {{ player1Score}} </h3>
+    <button id="player1" (click)="game(1)" [disabled]="stopGame"> PLAY </button>
   </div>
   <div class="player">
-    <h3>{{ player2Name }}</h3>
-    <img src="images/dice1.jpg" />
+    <h2>{{ player2Name }}</h2>
+    <img src="assets//images//dice2.jpg" />
+    <h3> Points : {{ player2Score}} </h3>
+    <button id="player2" (click)="game(2)" [disabled]="stopGame"> PLAY </button>
   </div>
+</div>
+<br>
+<div class="points">
+<thead>
+  Points Total
+</thead>
+<table>
+<tr>
+  <th> {{ player1Name}} </th>
+  <th> {{ player2Name}}  </th>
+</tr>
+<tr>
+  <td> {{ player1Total}} </td>
+  <td> {{ player2Total}} </td>
+</tr>
+</table>
 </div>

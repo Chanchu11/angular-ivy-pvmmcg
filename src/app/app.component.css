@@ -8,6 +8,13 @@ p {
   text-align: center;
 }
 
+.points {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+
 .player {
   text-align: center;
   display: inline-block;
